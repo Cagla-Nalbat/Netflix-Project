@@ -1,0 +1,218 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+body {
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+/*Spacing*/
+.spacing {
+  height: 50px;
+  opacity: 0;
+}
+.hero-image {
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(img/arkaplan.jpg);
+}
+.hero-text {
+  font-size: 5rem; /**/
+  /* font-weight: 600; */
+}
+input {
+  width: 30%;
+  height: 4rem;
+}
+#index_button {
+  width: 10%;
+  height: 4rem;
+  position: absolute;
+  border-radius: 0 !important;
+  font-size: 1.2rem !important;
+  background-color: red !important;
+}
+form {
+  transform: translate(-3%, 50%);
+}
+.cizgi {
+  border-bottom: 5px solid rgb(37, 36, 36);
+  width: 100%;
+}
+.inputIcerik:focus {
+  outline-style: solid;
+  outline-width: 3px;
+}
+/* Oturum*/
+.hero-image-oturum {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(img/arkaplan.jpg);
+}
+#oturum_button {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  border-radius: 0 !important;
+  font-size: 15px !important;
+  background-color: red !important;
+}
+/* Anasayfa */
+.hero-image-main {
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(img/anasayfa-bg.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/*------------------------------------------------*/
+/*Resposive*/ 
+/*İndex*/
+@media screen and (max-width: 1025px) {
+  .hero-image {
+    width: 100%;
+    height: 100rex;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .hero-text {
+    font-size: 40px;
+  }
+  /* #index_button {
+  
+   
+  } */
+}
+@media screen and (max-width: 769px) {
+  .hero-image {
+    width: 100%;
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 768px) {
+  .hero-image {
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero-image {
+    box-sizing: border-box;
+  }
+}
+
+/*------------------------------------------------*/
+/* Profil*/
+@media (min-width: 425px) {
+  .responDiv {
+    max-width: 100% !important;
+  }
+  .responsive-prf {
+    display: flex;
+    justify-content: space-around;
+  }
+  .responsive-pr {
+    max-height: 120px !important;
+    background-color: #fff;
+    padding: 0 !important;
+    size: 100% 100% !important;
+  }
+  .overflow-hidden {
+    margin: auto !important;
+  }
+  .btnDiv {
+    margin-left: 40%;
+  }
+}
+@media (min-width: 768px) {
+  .responDiv {
+    max-width: 80% !important;
+  }
+  .responsive-pr {
+    max-height: 140px !important;
+  }
+  .btnDiv {
+    margin-left: 47%;
+  }
+}
+@media (min-width: 992px) {
+  .responDiv {
+    min-width: 60% !important;
+  }
+  .responsive-pr {
+    max-height: 150px !important;
+  }
+  .btnDiv {
+    margin-left: 47%;
+  }
+}
+@media (min-width: 1440px) {
+  .responDiv {
+    max-width: 150px !important;
+  }
+  .responsive-pr {
+    max-height: 150px !important;
+  }
+  .btnDiv {
+    margin-left: 47% !important;
+  }
+}
+/*------------------------------------------------*/
+/*Anasayfa*/
+/* @media (min-width: 425px) {
+  .hero-image-main{
+    max-width: 100% !important;
+    max-height: 40vh !important;
+    background-size: 100% 100% !important;
+  }
+  .logo-resp{
+    max-width: 10%;
+  }
+  .fluid-resp{
+    width: 100% !important;
+    font-size: small !important;
+    
+    /* me-auto mb-2 mb-lg-0  */
+  /* } 
+  #alignment-main{
+    margin: 0px;
+    width: 100%;
+    padding: 0;
+  }
+  .img-resp{
+    width: 200px;
+  }
+  .div-resp{
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  .text-resp{
+    font-size: small !important;
+    width: 100% !important;
+  } } */
+/* 
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+  
+}
+@media (min-width: 1440px) {
+  
+}
+   */
+
+
+/*------------------------------------------------*/
+/*Hesap Ayarları*/
+
+
+/*------------------------------------------------*/
+/*Oturum Açma*/

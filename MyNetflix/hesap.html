@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hesap Ayarları - Netflix</title>
+    <!--MyCss-->
+    <link rel="stylesheet" href="style.css" />
+    <!--icon-->
+    <link rel="shortcut icon" href="img/icon.png" />
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!--FontAwesome-->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">  -->
+    <!--Svg--> 
+   
+    <style>
+      body,
+      html,
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        background-color: #ffff;
+      }
+      button{
+        background: rgb(210, 209, 209) !important;
+        width: 85%;
+        border: none;
+        height: 35px;   
+      }
+      button:hover{
+        opacity:.8!important;
+        transform: translateY(-1px);
+        /* box-shadow: 10px 10px rgb(129, 49, 49);  Ekstra özellik*/
+      }
+      p,a{
+        font-size: 15px;
+        padding: 2px;
+        text-decoration: none;
+      }
+      .header{
+      position: absolute;
+      color: #ada4a4;
+      text-transform: uppercase;
+      width: 200px ;
+      margin-left: 20%;    
+      }
+      ul li{
+        border: none !important;
+      }
+          
+      /* display: flex; */
+      /* flex-direction: column; */
+      /* justify-content: space-evenly; */
+     
+       .line{
+       
+       display: block; 
+       margin-top: 0.5em;
+       margin-bottom: 0.5em; 
+       margin-left: 20%;
+       margin-right: 12%;
+       border-style: inset;
+       border-width: 1px;
+      }
+    </style>
+  </head>
+  <body>
+  <div class="navbar bg-black sticky-top px-5" 
+    style="
+    width: 100%;
+    height: 70px ;
+    padding: 0;
+    margin: 0;
+    ">
+      <div><img src="img/netflix_logo_1.jpg" alt="netflix_logo" style="background: black;" /></div>
+
+      <div class="bg-black">
+
+        <img
+        src="img/smile-icon.jpg"
+        class="rounded"
+        height="40"
+        alt="icon"
+        loading="lazy"
+        />  
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-chevron-down bg-black" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+<div class="spacing"></div>
+<!---->
+<div class="d-flex flex-row" style="width:60%; margin: auto; ">
+  <!-- <i class="fa-sharp fa-light fa-calendars fa-2xs" style="color: #ea0606; width: 150px; height: 150px;"></i> -->
+      <h3 style="font-size: 35px;">Hesap</h3>
+     <div >
+      
+        <h5 class=" m-2 px-3"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-play-btn" viewBox="0 0 16 16">
+          <path d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+          
+        </svg> İlk Üyelik Tarihi: Şubat 2020</h5>
+      </div>
+    </div>
+    <div class="line"></div>
+    <!---->
+
+    <div class="header">
+      <h4>ÜYELİK VE ÖDEMELER</h4>
+      <button>Üyeliği İptal Et</button>
+    </div>
+    <section  class="d-flex justify-content-between" style="margin-inline-start:37%;">
+      <div class="d-flex flex-column">
+
+        <div  class="d-flex flex-column mb-3"> <!-- d-flex flex-column mb-3 -->
+          <p>cglanlbt@gmail.com</p>
+          <p>Parola:********</p>
+          <p>Telefon: 0542 572 30 16</p>
+        </div>
+        <div class="d-flex flex-column mb-3">
+          <!-- <i class="fa-brands fa-cc-visa" style="color: #3359cc;"></i> -->
+          <p>**** **** **** 1225</p>
+          <p>Sonraki faturalama tarihiniz: 30 Haziran 2023.</p>
+        </div>
+        </div>
+         <div class="d-flex flex-column mb-3 " style="text-align:right;  margin-inline-end: 20%;">
+          <div  class="d-flex flex-column mb-2" >
+            <a href="#">E-postayı değiştir</a>
+            <a href="#">Parolayı Değiştir</a>
+            <a href="#">Telefon numarasını değiştir</a>
+          </div>
+            <!-- <div class="line"></div> -->
+           <div class="d-flex flex-column mb-3">
+             <a href="#">Ödeme bilgilerini yönet</a>
+             <a href="#">Yedek ödeme yöntemi ekle</a>
+             <a href="#">Fatura ayrıntıları</a>
+             <a href="#">Faturalama gününü değiştir</a>
+            </div>
+            <div class="flex-column mb-3">
+              <div>
+                <a  href="#">Hediye kartı ya da promosyon kodunu kullan</a>
+              </div>
+              <div>
+                <a  href="#">Hediye kartı alabileceğiz yerler</a>
+              </div>
+            </div>
+      </div>
+     </section>
+    <div class="line"></div>
+
+     <!---->
+      <div class="header">
+        <h4>Plan ayrıntıları</h4>
+      </div>
+    <section class="d-flex justify-content-between">
+      <div style="margin-inline-start: 37%;">
+        <div class="d-flex"  >       
+          <p>Temel</p>        
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="25" fill="currentColor" class="bi bi-badge-hd" viewBox="0 0 16 16">
+             <path d="M7.396 11V5.001H6.209v2.44H3.687V5H2.5v6h1.187V8.43h2.522V11h1.187zM8.5 5.001V11h2.188c1.811 0 2.685-1.107 2.685-3.015 0-1.894-.86-2.984-2.684-2.984H8.5zm1.187.967h.843c1.112 0 1.622.686 1.622 2.04 0 1.353-.505 2.02-1.622 2.02h-.843v-4.06z"/>
+             <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
+            </svg>          
+          </div>
+      </div>
+       <div style="text-align:right; margin-inline-end: 13%;" ><!--float-end-->
+         <a href="#">Planı değiştir</a>
+       </div>
+    </section>
+    <div class="line"></div>
+
+    <!---->
+      <div class="header">
+        <h4>Güvenlik ve Gizlilik</h4>
+      </div>
+
+  <section class="d-flex " style=" margin-inline-start: 37%;">
+   
+      <div>        
+          <p style="width: 75%;">Bu hesaba kimlerin erişeceğini kontrol edin, en son kullanılan cihazları görüntüleyin ve daha fazlasını yapın.</p>     
+     </div>
+      <div class="d-flex flex-column" style="text-align: right;  margin-inline-end: 20%; width: 60%;" ><!--float-end-->
+        <a href="#">Erişim izinlerini ve cihazları yönetin</a>
+        <a href="#">Tüm cihazlarda oturumu kapat</a>
+      </div>
+    </section>
+    <div class="line"></div>
+
+    <!---->
+      <div>
+        <div class="header" >
+          <h4>Profil ve ebeveyn kontrolleri</h4>
+        </div>
+        <section>
+          <div style="margin-inline-start: 36%;">
+            <ul style="list-style-type: none; width: 80%;" class="list-group border-bottom">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                  <img src="img/smile-icon.jpg" alt="icon" style="height: 65px;" class="rounded p-2">
+                  <span>Çağla</span>
+                </div>
+                  <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                          <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 
+                            1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                  
+                </div>
+              </li>
+              </ul>
+            </div>
+            <div style="margin-inline-start: 36%;">
+              <ul style="list-style-type: none; width: 80%;" class="list-group border-bottom">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <div>
+                    <img src="img/smile-icon.jpg" alt="icon" style="height: 65px;" class="rounded p-2">
+                    <span>Çağla</span>
+                  </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 
+                              1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                          </svg>
+                      </div>
+                    
+                  </div>
+                </li>
+                </ul>
+              </div>
+              <div style="margin-inline-start: 36%;">
+                <ul style="list-style-type: none;width: 80%;" class="list-group  border-bottom">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div>
+                      <img src="img/smile-icon.jpg" alt="icon" style="height: 65px;" class="rounded p-2">
+                      <span>Çağla</span>
+                    </div>
+                      <div>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                              <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 
+                                1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </div>
+                      
+                    </div>
+                  </li>
+                  </ul>
+                </div>
+                   <div style="margin-inline-start: 36%;">
+   <ul style="list-style-type: none; width: 80%;" class="list-group">
+     <li class="list-group-item d-flex justify-content-between align-items-center">
+       <div >
+         <img src="img/smile-icon.jpg" alt="icon" style="height: 65px;" class="rounded p-2">
+         <span>Çağla</span>
+       </div>
+         <div>
+             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                 <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 
+                   1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+               </svg>
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+              </svg>
+           </div>
+         
+       </div>
+     </li>
+     </ul>
+      </section>
+    <div class="line"></div>
+      
+      <!---->
+    <div>
+      <div class="header">
+        <h4>Ayarlar</h4>
+      </div>
+      <section >
+        <div class="d-flex flex-column mb-3" style="align-items: end; margin-inline-end: 13%;">
+          <a href="#">18+ İçeriklere Erişim Pın'i</a>
+          <a href="#">Profil transferi özelliğini aç</a>
+          <a href="#">Teste katılım</a>
+          <a href="#">İçerik indirilen cihazları yönet</a>
+        </div>
+      </section>
+    </div>
+  <div class="spacing"></div>
+    <!--Footer-->
+<footer class="container mt-3 text-black-50">
+  <p>Sorularınız mı var? 00000000 numaralı telefondan arayın.</p>
+  <div class="row">
+    <div class="col-3 d-flex flex-column">
+      <a class="text-decoration-none text-black-50" href="#">Seslendirme ve Alt Yazı</a>
+      <a class="text-decoration-none text-black-50 mt-3" href="#"
+        >Medya Merkezi</a
+      >
+      <a class="text-decoration-none text-black-50 mt-3" href="#"
+        >Gizlilik Bildirimi</a >
+ </div>
+    <div class="col-3 d-flex flex-column">
+      <a class="text-decoration-none text-black-50" href="#"
+        >Yardım Merkezi</a
+      >
+      <a class="text-decoration-none text-black-50 mt-3" href="#"
+        >İş İmkanları</a
+      >
+    </div>
+    <div class="col-3 d-flex flex-column">
+      <a class="text-decoration-none text-black-50" href="#">Hediye Kartları</a>
+      <a class="text-decoration-none text-black-50 mt-3" href="#"
+        >Çerez Tercihleri</a
+      >
+    </div>
+    <div class="col-3 d-flex flex-column">
+      <a class="text-decoration-none text-black-50" href="#"
+        >Yatırımcı İlişkileri</a
+      >
+      <a class="text-decoration-none text-black-50 mt-3" href="#"
+        >Kullanım Koşulları</a
+      >    
+    </div>
+  </div>
+  <div
+    class=" text-grey p-3 mt-5 border border-secondary d-flex"
+    style="width: 100px; height: 45px"
+  >
+      <span>Hizmet Kodu</span>
+  </div>
+  <p class="mt-5 mb-4">@Neos Yazılım 2023 28 Şubat Froentend Grubu</p>
+</footer>
+
+
+   <!--Bootstrap css-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+</html>
